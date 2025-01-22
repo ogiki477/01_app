@@ -1,7 +1,7 @@
 import { CORE_CONCEPTS } from './data.js';
 
 import Header from './components/Header/Header.jsx';
-
+import TabButton from './components/TapButton.jsx';
 import CoreConcept from './components/CoreConcept.jsx';
 
 function App() {
@@ -26,6 +26,16 @@ function App() {
           <CoreConcept {...CORE_CONCEPTS[3]} />
                 
           </ul>
+        </section>
+
+        <section id='examples'>
+          <h1>Examples</h1>
+          <menu>
+            <TabButton>Components</TabButton>
+            <TabButton>JSX</TabButton>
+            <TabButton>Props</TabButton>
+            <TabButton>State</TabButton>
+          </menu>
         </section>
         
       </main>
